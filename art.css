@@ -2,11 +2,34 @@
   background-image: url(https://picsum.photos/id/234/320/300);
   height: 310px;
   border: 5px solid white;
-  margin: 4px;
+  margin: 10px 5px;
 
 }
 
 .bannerContent {
+  font-size: 100px;
+  font-style: italic;
+  font-family: 'Montserrat', sans-serif;
+  /* background: -webkit-linear-gradient(0deg,rgba(255, 0, 0, 0.75), rgba(255, 0, 0, 0.25)); */
+  background-color: red;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  backdrop-filter: blur(5px);
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bannerContent h1 {
+  text-align: center;
+  font-weight: 400;
+}
+
+.bannerContent:before {
+  content: '';
+  position: absolute;
   font-size: 100px;
   font-style: italic;
   font-family: 'Montserrat', sans-serif;
@@ -47,9 +70,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
   }
   .bannerContent h1 {
     font-size: 25px;
+
   }
 }
 
